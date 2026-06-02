@@ -1,0 +1,95 @@
+# NAM-WH HMI Requirements
+# Python 3.12+ (Compatible with Python 3.13 for RPi 5)
+
+# Core Framework
+PySide6==6.10.1
+PySide6-Addons==6.10.1
+
+# Charting/Graphing
+pyqtgraph==0.14.0
+
+# PLC Communication
+pymodbus==3.6.3
+
+# Database
+SQLAlchemy==2.0.45
+
+# Authentication & Security
+bcrypt==5.0.0
+passlib==1.7.4
+PyJWT==2.10.1
+
+# RFID Reader Support
+# Note: evdev requires GCC compiler and python3-dev
+# Install: sudo apt-get install build-essential python3-dev
+evdev==1.9.2; platform_system=="Linux"
+pyserial==3.5
+
+# System Monitoring (for IoT)
+psutil==7.2.1
+
+# Configuration Management
+python-dotenv==1.0.1
+
+# Logging
+loguru==0.7.2
+
+# Utilities
+python-dateutil==2.9.0
+pytz==2024.1
+pexpect==4.9.0
+
+# IoT Integration (Phase 2)
+paho-mqtt==1.6.1
+requests==2.32.5
+
+# Data Processing (Optional)
+pandas==2.3.3
+numpy==2.4.1
+
+# Testing
+pytest==9.0.2
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+
+# Development Tools
+black==26.1.0
+flake8==7.3.0
+mypy==1.19.1
+pylint==4.0.4
+
+# Build Tools (Nuitka binary compilation)
+# Note: ใช้สำหรับ deploy/build.sh เท่านั้น ไม่จำเป็นบน Pi ลูกค้า
+nuitka==4.0.2
+ordered-set==4.1.0
+zstandard==0.25.0
+
+# Type Stubs
+types-python-dateutil==2.9.0.20251115
+types-pytz==2024.1.0.20240203
+types-requests==2.31.0.20240125
+
+# ========================================
+# Installation Instructions
+# ========================================
+#
+# 1. Install system dependencies (Ubuntu/Debian):
+#    sudo apt-get update
+#    sudo apt-get install -y \
+#        build-essential python3-dev \
+#        patchelf ccache libfuse2
+#
+# 2. Create virtual environment:
+#    python3 -m venv env
+#    source env/bin/activate  # Linux/Mac
+#    # or
+#    env\Scripts\activate  # Windows
+#
+# 3. Install Python packages:
+#    pip install -r requirements.txt
+#
+# 4. For testing PLC communication:
+#    python3 test/plc_simulator.py  # Terminal 1
+#    python3 test/plc_tester.py     # Terminal 2
+#
+# ========================================

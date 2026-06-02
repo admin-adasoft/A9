@@ -1,0 +1,123 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+
+# Database
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+data/nam_washer.db
+data/backups/
+
+# Logs
+*.log
+data/logs/
+logs/
+
+# IoT Buffer
+data/iot_buffer.db
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Type checking
+.pyre/
+.pytype/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Project specific
+assets/temp/
+data/temp/
+screenshots/
+
+# Deploy build output (binary สำหรับแจกจ่าย ไม่ต้อง commit)
+deploy/dist/
+
+# Documentation build
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# Compiled translations
+*.mo
+
+# Backup files
+*.backup
+*~
+
+# Development
+TODO.txt
+NOTES.txt
+dev_notes/
+
+
+tmpclaude*
+
+
+*agent
+*agents
+*claude
+*windsurf
+*kilocode

@@ -1,0 +1,20 @@
+{
+  "languages": [
+    {
+      "code": "th_TH",
+      "name": "ภาษาไทย",
+      "flag": "th-TH.png",
+      "rtl": false,
+      "enabled": true
+    },
+    {
+      "code": "en_GB",
+      "name": "English",
+      "flag": "en-GB.png",
+      "rtl": false,
+      "enabled": true
+    },
+  ],
+  "default": "th_TH",
+  "fallback": "en_GB"
+}
