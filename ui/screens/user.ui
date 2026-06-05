@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Screen32User</class>
+ <widget class="QMainWindow" name="Screen32User">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Poppins</family>
+   </font>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+        #ofrm_central { background-color: #ffffff; }
+   </string>
+  </property>
+  <widget class="QWidget" name="ofrm_central">
+   <layout class="QVBoxLayout" name="layout_main">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>20</number>
+    </property>
+    <item>
+     <widget class="HeaderBWidget" name="ofrm_header" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>80</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="layout_content">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QFrame" name="ofrm_user_card">
+        <property name="minimumSize">
+         <size>
+          <width>820</width>
+          <height>380</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>820</width>
+          <height>380</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+            QFrame#ofrm_user_card {
+                background-color: #ffffff;
+                border: 4px solid #003057;
+                border-radius: 30px;
+            }
+         </string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <layout class="QVBoxLayout" name="layout_card">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>50</number>
+         </property>
+         <property name="topMargin">
+          <number>20</number>
+         </property>
+         <property name="rightMargin">
+          <number>50</number>
+         </property>
+         <property name="bottomMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="layout_user_row">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="olbl_user_icon">
+             <property name="minimumSize">
+              <size>
+               <width>55</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>55</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+                QLabel {
+                    border: 3px solid #003057;
+                    border-radius: 27px;
+                    padding: 4px;
+                }
+              </string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="../../assets/resources.qrc">:/images/user.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="olbl_user_label">
+             <property name="styleSheet">
+              <string notr="true">color: #000000; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 24px; font-weight: 900;</string>
+             </property>
+             <property name="text">
+              <string>ผู้ใช้งาน :</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="olbl_username_value">
+             <property name="styleSheet">
+              <string notr="true">color: #00aa00; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 24px; font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>XXXXXXXXXXX</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_user">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="layout_fullname_row">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="olbl_fullname_icon">
+             <property name="minimumSize">
+              <size>
+               <width>55</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>55</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+                QLabel {
+                    border: 3px solid #003057;
+                    border-radius: 27px;
+                    padding: 4px;
+                }
+              </string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="../../assets/resources.qrc">:/images/name.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="olbl_fullname_label">
+             <property name="styleSheet">
+              <string notr="true">color: #000000; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 24px; font-weight: 900;</string>
+             </property>
+             <property name="text">
+              <string>ชื่อ-นามสกุล :</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="olbl_fullname_value">
+             <property name="styleSheet">
+              <string notr="true">color: #00aa00; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 24px; font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>XXXXXXXXXXX</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_fullname">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="layout_position_row">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="olbl_position_icon">
+             <property name="minimumSize">
+              <size>
+               <width>55</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>55</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+                QLabel {
+                    border: 3px solid #003057;
+                    border-radius: 27px;
+                    padding: 4px;
+                }
+              </string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="../../assets/resources.qrc">:/images/position.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="olbl_position_label">
+             <property name="styleSheet">
+              <string notr="true">color: #000000; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 24px; font-weight: 900;</string>
+             </property>
+             <property name="text">
+              <string>ตำแหน่ง :</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="olbl_position_value">
+             <property name="styleSheet">
+              <string notr="true">color: #00aa00; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 24px; font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>XXXXXXXXXXX</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_position">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="layout_rfid_row">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="olbl_rfid_icon">
+             <property name="minimumSize">
+              <size>
+               <width>55</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>55</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+               QLabel {
+                   border: 3px solid #003057;
+                   border-radius: 27px;
+                   padding: 4px;
+               }
+              </string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="../../assets/resources.qrc">:/images/card_id.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="olbl_rfid_label">
+             <property name="styleSheet">
+              <string notr="true">color: #000000; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 24px; font-weight: 900;</string>
+             </property>
+             <property name="text">
+              <string>รหัสบัตร :</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="olbl_rfid_value">
+             <property name="styleSheet">
+              <string notr="true">color: #00aa00; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 24px; font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>XXXXXXXXXXX</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_rfid">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="layout_created_row">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="olbl_created_icon">
+             <property name="minimumSize">
+              <size>
+               <width>55</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>55</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+                QLabel {
+                    border: 3px solid #003057;
+                    border-radius: 27px;
+                    padding: 4px;
+                }
+              </string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="../../assets/resources.qrc">:/images/calendar.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="olbl_created_label">
+             <property name="styleSheet">
+              <string notr="true">color: #000000; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 24px; font-weight: 900;</string>
+             </property>
+             <property name="text">
+              <string>สร้างเมื่อ :</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="olbl_created_value">
+             <property name="styleSheet">
+              <string notr="true">color: #00aa00; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 24px; font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>XXXXXXXXXXX</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_created">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="layout_bottom_bar">
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="obtn_home">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>70</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="visible">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+               QPushButton { background-color: #004B93; border-radius: 35px; border: none; }
+               QPushButton:hover { background-color: #0066CC; }
+               QPushButton:pressed { background-color: #003057; }
+           </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../../assets/resources.qrc">
+          <normaloff>:/images/home.png</normaloff>:/images/home.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="obtn_back">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>70</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+               QPushButton { background-color: #004B93; border-radius: 35px; border: none; }
+               QPushButton:hover { background-color: #0066CC; }
+               QPushButton:pressed { background-color: #003057; }
+           </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../../assets/resources.qrc">
+          <normaloff>:/icon/chevron-left.svg</normaloff>:/icon/chevron-left.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>55</width>
+          <height>55</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_left">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="obtn_edit">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Poppins</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+               QPushButton {
+                   background-color: #27AE60;
+                   border: none;
+                   border-radius: 15px;
+                   color: #ffffff;
+                   font-family: 'Poppins', 'Noto Sans Thai';
+                   font-weight: bold;
+                   font-size: 18px;
+               }
+               QPushButton:hover { background-color: #229954; }
+               QPushButton:pressed { background-color: #1E8449; }
+           </string>
+        </property>
+        <property name="text">
+         <string>แก้ไข</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_right">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>HeaderBWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">src.ui.widgets.header_b_widget</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../assets/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

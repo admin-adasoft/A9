@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SidebarMenuWidget</class>
+ <widget class="QWidget" name="SidebarMenuWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>140</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>140</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>140</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Poppins</family>
+    <kerning>true</kerning>
+   </font>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* 
+DESIGN LOGIC: SIDEBAR MENU ANIMATION
+- ofrm_selection_indicator: A floating QFrame used as an animated selection background.
+- Logic: In Python, use QPropertyAnimation on 'geometry' property to move this frame.
+- Animation: Target the geometry of the clicked QPushButton.
+- Styling: QPushButton:checked is transparent to reveal this indicator behind it.
+- Blinking: Use status='alert_on'/'alert_off' with a QTimer for the bell icon.
+*/
+
+SidebarMenuWidget, QWidget#SidebarMenuWidget, QWidget#sidebar_menu_widget {
+	background-color: #FFFFFF;
+	border-top-right-radius: 70px;
+	border-bottom-right-radius: 70px;
+	border: 7px solid #003057;
+}
+QPushButton {
+	background-color: transparent;
+	border: none;
+	color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+QPushButton:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+QPushButton:checked {
+	background-color: transparent;
+}
+
+QFrame#ofrm_selection_indicator {
+	background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+}
+
+/* --- Status: Alert (Bell Only - Blinking support) --- */
+/* Icon is managed by Python setIcon() — no qproperty-icon here */
+QPushButton#obtn_alarm_side[status="alert"],
+QPushButton#obtn_alarm_side[status="alert_on"],
+QPushButton#obtn_alarm_side[status="alert_off"] {
+    background-color: rgba(243, 53, 53, 0.0);
+    border: none;
+}
+QPushButton#obtn_alarm_side[status="alert"]:hover,
+QPushButton#obtn_alarm_side[status="alert_on"]:hover,
+QPushButton#obtn_alarm_side[status="alert_off"]:hover {
+    background-color: rgba(243, 53, 53, 0);
+}
+
+/* --- Status: Warning (General) --- */
+QPushButton[status="warning"] {
+    background-color: rgba(255, 178, 0, 0.4);
+    border: 2px solid #FFB200;
+}
+QPushButton[status="warning"]:hover {
+    background-color: rgba(255, 178, 0, 0.6);
+}
+
+* { font-family: 'Poppins', 'Noto Sans Thai'; }</string>
+  </property>
+  <property name="lineWidth" stdset="0">
+   <number>-2</number>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+    <widget class="QFrame" name="ofrm_sidebar_bg">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>90</width>
+       <height>550</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>90</width>
+       <height>550</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+	background-color: #003057;
+	border-radius: 45px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+           <widget class="QFrame" name="ofrm_selection_indicator">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>35</y>
+         <width>60</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+      <layout class="QVBoxLayout" name="verticalLayout_Inbox">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>35</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>35</number>
+      </property>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QPushButton" name="obtn_home_side">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Home</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../../assets/resources.qrc">
+          <normaloff>:/icon/home-outline.svg</normaloff>
+          <activeon>:/icon/home-filled.svg</activeon>:/icon/home-outline.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>55</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QPushButton" name="obtn_testing_side">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Testing Program</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../../assets/resources.qrc">
+          <normaloff>:/icon/adjustments-vertical-outline.svg</normaloff>
+          <activeon>:/icon/adjustments-vertical-filled.svg</activeon>:/icon/adjustments-vertical-outline.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>55</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QPushButton" name="obtn_users_side">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Users/RFID</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../../assets/resources.qrc">
+          <normaloff>:/icon/users-outline.svg</normaloff>
+          <activeon>:/icon/users-filled.svg</activeon>:/icon/users-outline.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>55</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QPushButton" name="obtn_history_side">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>History</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../../assets/resources.qrc">
+          <normaloff>:/icon/newspaper-outline.svg</normaloff>
+          <activeon>:/icon/newspaper-filled.svg</activeon>:/icon/newspaper-outline.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>55</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QPushButton" name="obtn_alarm_side">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Alarm</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../../assets/resources.qrc">
+          <normaloff>:/icon/bell-outline.svg</normaloff>
+          <activeon>:/icon/bell-filled.svg</activeon>:/icon/bell-outline.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>55</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QPushButton" name="obtn_setting_side">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Settings</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../../assets/resources.qrc">
+          <normaloff>:/icon/cog-6-tooth-outline.svg</normaloff>
+          <activeon>:/icon/cog-6-tooth-filled.svg</activeon>:/icon/cog-6-tooth-outline.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>55</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QPushButton" name="obtn_maintenance_side">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>60</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Maintenance</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../../assets/resources.qrc">
+          <normaloff>:/icon/wrench-screwdriver-outline.svg</normaloff>
+          <activeon>:/icon/wrench-screwdriver-filled.svg</activeon>:/icon/wrench-screwdriver-outline.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../assets/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

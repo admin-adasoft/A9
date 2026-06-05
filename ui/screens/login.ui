@@ -98,6 +98,9 @@ font-family: 'Poppins', 'Noto Sans Thai';</string>
         <property name="rightMargin">
          <number>0</number>
         </property>
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
         <item alignment="Qt::AlignHCenter">
          <widget class="QLineEdit" name="oedit_username">
           <property name="minimumSize">
@@ -371,6 +374,14 @@ QPushButton:pressed {
 	border-radius: 15px;
 	color: #003057;
 	padding: 10px;
+}
+QToolButton:hover {
+	background-color: #E8F0F8;
+	border: 3px solid #0066CC;
+}
+QToolButton:pressed {
+	background-color: #D0E4F5;
+	border: 3px solid #004B93;
 }</string>
           </property>
           <property name="text">
@@ -456,6 +467,9 @@ QPushButton:pressed {
          <string notr="true">QPushButton {
 	background-color: #004B93;
 	border-radius: 35px;
+}
+QPushButton:hover {
+	background-color: #0066CC;
 }
 QPushButton:pressed {
 	background-color: #003057;
