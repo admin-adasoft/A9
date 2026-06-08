@@ -138,83 +138,6 @@
           <number>20</number>
          </property>
          <item>
-          <layout class="QHBoxLayout" name="layout_user_row">
-           <property name="spacing">
-            <number>20</number>
-           </property>
-           <item>
-            <widget class="QLabel" name="olbl_user_icon">
-             <property name="minimumSize">
-              <size>
-               <width>55</width>
-               <height>55</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>55</width>
-               <height>55</height>
-              </size>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">
-                QLabel {
-                    border: 3px solid #003057;
-                    border-radius: 27px;
-                    padding: 4px;
-                }
-              </string>
-             </property>
-             <property name="text">
-              <string/>
-             </property>
-             <property name="pixmap">
-              <pixmap resource="../../assets/resources.qrc">:/images/user.png</pixmap>
-             </property>
-             <property name="scaledContents">
-              <bool>true</bool>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLabel" name="olbl_user_label">
-             <property name="styleSheet">
-              <string notr="true">color: #000000; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 24px; font-weight: 900;</string>
-             </property>
-             <property name="text">
-              <string>ผู้ใช้งาน :</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLabel" name="olbl_username_value">
-             <property name="styleSheet">
-              <string notr="true">color: #00aa00; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 24px; font-weight: bold;</string>
-             </property>
-             <property name="text">
-              <string>XXXXXXXXXXX</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <spacer name="horizontalSpacer_user">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>40</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-          </layout>
-         </item>
-         <item>
           <layout class="QHBoxLayout" name="layout_fullname_row">
            <property name="spacing">
             <number>20</number>
@@ -278,6 +201,83 @@
            </item>
            <item>
             <spacer name="horizontalSpacer_fullname">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="layout_user_row">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="olbl_user_icon">
+             <property name="minimumSize">
+              <size>
+               <width>55</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>55</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+                QLabel {
+                    border: 3px solid #003057;
+                    border-radius: 27px;
+                    padding: 4px;
+                }
+              </string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="../../assets/resources.qrc">:/images/user.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="olbl_user_label">
+             <property name="styleSheet">
+              <string notr="true">color: #000000; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 24px; font-weight: 900;</string>
+             </property>
+             <property name="text">
+              <string>ผู้ใช้งาน :</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="olbl_username_value">
+             <property name="styleSheet">
+              <string notr="true">color: #00aa00; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 24px; font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>XXXXXXXXXXX</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_user">
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
              </property>
@@ -416,7 +416,7 @@
               <string notr="true">color: #000000; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 24px; font-weight: 900;</string>
              </property>
              <property name="text">
-              <string>รหัสบัตร :</string>
+              <string>RFID :</string>
              </property>
             </widget>
            </item>
@@ -548,13 +548,7 @@
       <property name="leftMargin">
        <number>0</number>
       </property>
-      <property name="topMargin">
-       <number>0</number>
-      </property>
       <property name="rightMargin">
-       <number>0</number>
-      </property>
-      <property name="bottomMargin">
        <number>0</number>
       </property>
       <item>
@@ -577,7 +571,6 @@
         <property name="styleSheet">
          <string notr="true">
                QPushButton { background-color: #004B93; border-radius: 35px; border: none; }
-               QPushButton:hover { background-color: #0066CC; }
                QPushButton:pressed { background-color: #003057; }
            </string>
         </property>
@@ -585,7 +578,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../../assets/resources.qrc">
+         <iconset>
           <normaloff>:/images/home.png</normaloff>:/images/home.png</iconset>
         </property>
         <property name="iconSize">
@@ -613,7 +606,6 @@
         <property name="styleSheet">
          <string notr="true">
                QPushButton { background-color: #004B93; border-radius: 35px; border: none; }
-               QPushButton:hover { background-color: #0066CC; }
                QPushButton:pressed { background-color: #003057; }
            </string>
         </property>
@@ -662,7 +654,7 @@
         <property name="font">
          <font>
           <family>Poppins</family>
-          <pointsize>14</pointsize>
+          <pointsize>-1</pointsize>
           <weight>75</weight>
           <bold>true</bold>
          </font>
@@ -678,7 +670,6 @@
                    font-weight: bold;
                    font-size: 18px;
                }
-               QPushButton:hover { background-color: #229954; }
                QPushButton:pressed { background-color: #1E8449; }
            </string>
         </property>

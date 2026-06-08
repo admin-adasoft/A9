@@ -30,6 +30,19 @@
   <property name="styleSheet">
    <string notr="true">
         #ofrm_central { background-color: #ffffff; }
+        /* Input fields */
+        QLineEdit.formInput {
+            background-color: #ffffff;
+            border: 3px solid #003057;
+            border-radius: 20px;
+            padding: 8px 20px;
+            font-family: &quot;Poppins&quot;, &quot;Noto Sans Thai&quot;;
+            font-size: 16px;
+            color: #333333;
+        }
+        QLineEdit.formInput:focus {
+            border: 3px solid #0099cc;
+        }
    </string>
   </property>
   <widget class="QWidget" name="ofrm_central">
@@ -125,147 +138,228 @@
           <number>25</number>
          </property>
          <item>
-          <widget class="QLineEdit" name="otxt_fullname">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>55</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>55</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>Poppins</family>
-             <pointsize>14</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QLineEdit {
-	background-color: #ffffff;
-	border: 3px solid #003057;
-	border-radius: 20px;
-	padding: 8px 20px;
-	font-family: 'Poppins', 'Noto Sans Thai';
-	font-size: 16px;
-	color: #333333;
-}
-QLineEdit:focus {
-	border: 3px solid #0099cc;
-}</string>
-           </property>
-           <property name="placeholderText">
-            <string>ชื่อ - นามสกุล</string>
-           </property>
-          </widget>
+          <layout class="QHBoxLayout" name="layout_row_fullname">
+           <item>
+            <widget class="QLabel" name="olbl_fullname">
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: #003057; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 15px; font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>ชื่อ - นามสกุล :</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="otxt_fullname">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Poppins</family>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="placeholderText">
+              <string>ชื่อ - นามสกุล</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>formInput</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
          <item>
-          <widget class="QLineEdit" name="otxt_username">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>55</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>55</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>Poppins</family>
-             <pointsize>14</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QLineEdit {
-	background-color: #ffffff;
-	border: 3px solid #003057;
-	border-radius: 20px;
-	padding: 8px 20px;
-	font-family: 'Poppins', 'Noto Sans Thai';
-	font-size: 16px;
-	color: #333333;
-}
-QLineEdit:focus {
-	border: 3px solid #0099cc;
-}</string>
-           </property>
-           <property name="placeholderText">
-            <string>ผู้ใช้งาน</string>
-           </property>
-          </widget>
+          <layout class="QHBoxLayout" name="layout_row_username">
+           <item>
+            <widget class="QLabel" name="olbl_username">
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: #003057; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 15px; font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>ผู้ใช้งาน :</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="otxt_username">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Poppins</family>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="placeholderText">
+              <string>ผู้ใช้งาน</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>formInput</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
          <item>
-          <widget class="QLineEdit" name="otxt_password">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>55</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>55</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>Poppins</family>
-             <pointsize>14</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QLineEdit {
-	background-color: #ffffff;
-	border: 3px solid #003057;
-	border-radius: 20px;
-	padding: 8px 20px;
-	font-family: 'Poppins', 'Noto Sans Thai';
-	font-size: 16px;
-	color: #333333;
-}
-QLineEdit:focus {
-	border: 3px solid #0099cc;
-}</string>
-           </property>
-           <property name="echoMode">
-            <enum>QLineEdit::Password</enum>
-           </property>
-           <property name="placeholderText">
-            <string>รหัสผ่าน</string>
-           </property>
-          </widget>
+          <layout class="QHBoxLayout" name="layout_row_password">
+           <item>
+            <widget class="QLabel" name="olbl_password">
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: #003057; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 15px; font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>รหัสผ่าน :</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="otxt_password">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Poppins</family>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+             <property name="placeholderText">
+              <string>รหัสผ่าน</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>formInput</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
          <item>
-          <widget class="QComboBox" name="ocmb_role">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>55</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>55</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>Poppins</family>
-             <pointsize>14</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">
+          <layout class="QHBoxLayout" name="layout_row_role">
+           <item>
+            <widget class="QLabel" name="olbl_role">
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: #003057; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 15px; font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>บทบาท :</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ocmb_role">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Poppins</family>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
                QComboBox {
                    background-color: #ffffff;
                    border: 3px solid #003057;
@@ -320,56 +414,41 @@ QLineEdit:focus {
                    border: none;
                    outline: none;
                }
-            </string>
-           </property>
-          </widget>
+              </string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </item>
          <item>
-          <widget class="QLineEdit" name="otxt_position">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>55</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>16777215</width>
-             <height>55</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>Poppins</family>
-             <pointsize>14</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QLineEdit {
-	background-color: #ffffff;
-	border: 3px solid #003057;
-	border-radius: 20px;
-	padding: 8px 20px;
-	font-family: 'Poppins', 'Noto Sans Thai';
-	font-size: 16px;
-	color: #333333;
-}
-QLineEdit:focus {
-	border: 3px solid #0099cc;
-}</string>
-           </property>
-           <property name="placeholderText">
-            <string>ตำแหน่ง</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="layout_rfid">
-           <property name="spacing">
-            <number>10</number>
-           </property>
+          <layout class="QHBoxLayout" name="layout_row_position">
            <item>
-            <widget class="QLineEdit" name="otxt_rfid">
+            <widget class="QLabel" name="olbl_position">
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>55</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: #003057; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 15px; font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>ตำแหน่ง :</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="otxt_position">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -385,73 +464,123 @@ QLineEdit:focus {
              <property name="font">
               <font>
                <family>Poppins</family>
-               <pointsize>14</pointsize>
+               <pointsize>-1</pointsize>
               </font>
              </property>
-             <property name="styleSheet">
-              <string notr="true">QLineEdit {
-	background-color: #ffffff;
-	border: 3px solid #003057;
-	border-radius: 20px;
-	padding: 8px 20px;
-	font-family: 'Poppins', 'Noto Sans Thai';
-	font-size: 16px;
-	color: #333333;
-}
-QLineEdit:focus {
-	border: 3px solid #0099cc;
-}</string>
-             </property>
              <property name="placeholderText">
-              <string>RFID</string>
+              <string>ตำแหน่ง</string>
+             </property>
+             <property name="class" stdset="0">
+              <string>formInput</string>
              </property>
             </widget>
            </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="layout_row_rfid">
            <item>
-            <widget class="QPushButton" name="obtn_read_rfid">
+            <widget class="QLabel" name="olbl_rfid">
              <property name="minimumSize">
               <size>
-               <width>120</width>
+               <width>160</width>
                <height>55</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
-               <width>120</width>
+               <width>160</width>
                <height>55</height>
               </size>
              </property>
-             <property name="font">
-              <font>
-               <family>Poppins</family>
-               <pointsize>14</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
-              </font>
-             </property>
              <property name="styleSheet">
-              <string notr="true">
-                 QPushButton {
-                     background-color: #3498DB;
-                     border: none;
-                     border-radius: 15px;
-                     color: #ffffff;
-                     font-family: 'Poppins', 'Noto Sans Thai';
-                     font-weight: bold;
-                     font-size: 14px;
-                 }
-                 QPushButton:hover {
-                     background-color: #5DADE2;
-                 }
-                 QPushButton:pressed {
-                     background-color: #2980B9;
-                 }
-              </string>
+              <string notr="true">color: #003057; font-family: 'Poppins', 'Noto Sans Thai'; font-size: 15px; font-weight: bold;</string>
              </property>
              <property name="text">
-              <string>อ่าน RFID</string>
+              <string>RFID :</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignVCenter</set>
              </property>
             </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="layout_rfid">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QLineEdit" name="otxt_rfid">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>55</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>55</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Poppins</family>
+                 <pointsize>-1</pointsize>
+                </font>
+               </property>
+               <property name="placeholderText">
+                <string>RFID</string>
+               </property>
+               <property name="class" stdset="0">
+                <string>formInput</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="obtn_read_rfid">
+               <property name="minimumSize">
+                <size>
+                 <width>120</width>
+                 <height>55</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>120</width>
+                 <height>55</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Poppins</family>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">
+                   QPushButton {
+                       background-color: #3498DB;
+                       border: none;
+                       border-radius: 15px;
+                       color: #ffffff;
+                       font-family: 'Poppins', 'Noto Sans Thai';
+                       font-weight: bold;
+                       font-size: 14px;
+                   }
+                   QPushButton:pressed {
+                       background-color: #2980B9;
+                   }
+                </string>
+               </property>
+               <property name="text">
+                <string>อ่าน RFID</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
            </item>
           </layout>
          </item>
@@ -479,13 +608,7 @@ QLineEdit:focus {
         <property name="leftMargin">
          <number>0</number>
         </property>
-        <property name="topMargin">
-         <number>0</number>
-        </property>
         <property name="rightMargin">
-         <number>0</number>
-        </property>
-        <property name="bottomMargin">
          <number>0</number>
         </property>
         <item>
@@ -512,9 +635,6 @@ QLineEdit:focus {
                   border-radius: 35px;
                   border: none;
               }
-              QPushButton:hover {
-                  background-color: #0066CC;
-              }
               QPushButton:pressed {
                   background-color: #003057;
               }
@@ -524,7 +644,7 @@ QLineEdit:focus {
            <string/>
           </property>
           <property name="icon">
-           <iconset resource="../../assets/resources.qrc">
+           <iconset>
             <normaloff>:/images/home.png</normaloff>:/images/home.png</iconset>
           </property>
           <property name="iconSize">
@@ -555,9 +675,6 @@ QLineEdit:focus {
                   background-color: #004B93;
                   border-radius: 35px;
                   border: none;
-              }
-              QPushButton:hover {
-                  background-color: #0066CC;
               }
               QPushButton:pressed {
                   background-color: #003057;
@@ -609,7 +726,7 @@ QLineEdit:focus {
           <property name="font">
            <font>
             <family>Poppins</family>
-            <pointsize>14</pointsize>
+            <pointsize>-1</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -624,9 +741,6 @@ QLineEdit:focus {
                   font-family: 'Poppins', 'Noto Sans Thai';
                   font-weight: bold;
                   font-size: 18px;
-              }
-              QPushButton:hover {
-                  background-color: #EF5350;
               }
               QPushButton:pressed {
                   background-color: #c62828;
@@ -671,7 +785,7 @@ QLineEdit:focus {
           <property name="font">
            <font>
             <family>Poppins</family>
-            <pointsize>14</pointsize>
+            <pointsize>-1</pointsize>
             <weight>75</weight>
             <bold>true</bold>
            </font>
@@ -686,9 +800,6 @@ QLineEdit:focus {
                   font-family: 'Poppins', 'Noto Sans Thai';
                   font-weight: bold;
                   font-size: 18px;
-              }
-              QPushButton:hover {
-                  background-color: #229954;
               }
               QPushButton:pressed {
                   background-color: #1E8449;

@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1024</width>
-    <height>600</height>
+    <width>884</width>
+    <height>520</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>1024</width>
-    <height>600</height>
+    <width>884</width>
+    <height>520</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>1024</width>
-    <height>600</height>
+    <width>884</width>
+    <height>520</height>
    </size>
   </property>
   <property name="font">
@@ -195,22 +195,6 @@
      <number>20</number>
     </property>
     <item>
-     <widget class="HeaderBWidget" name="ofrm_header" native="true">
-      <property name="minimumSize">
-       <size>
-        <width>0</width>
-        <height>80</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>80</height>
-       </size>
-      </property>
-     </widget>
-    </item>
-    <item>
      <spacer name="verticalSpacer">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
@@ -221,7 +205,7 @@
       <property name="sizeHint" stdset="0">
        <size>
         <width>20</width>
-        <height>10</height>
+        <height>20</height>
        </size>
       </property>
      </spacer>
@@ -248,18 +232,6 @@
         <property name="spacing">
          <number>15</number>
         </property>
-        <property name="leftMargin">
-         <number>0</number>
-        </property>
-        <property name="topMargin">
-         <number>0</number>
-        </property>
-        <property name="rightMargin">
-         <number>0</number>
-        </property>
-        <property name="bottomMargin">
-         <number>0</number>
-        </property>
         <item>
          <widget class="QLineEdit" name="otxt_search">
           <property name="minimumSize">
@@ -277,7 +249,7 @@
           <property name="font">
            <font>
             <family>Poppins</family>
-            <pointsize>14</pointsize>
+            <pointsize>-1</pointsize>
            </font>
           </property>
           <property name="placeholderText">
@@ -432,14 +404,6 @@
    </layout>
   </widget>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>HeaderBWidget</class>
-   <extends>QWidget</extends>
-   <header location="global">src.ui.widgets.header_b_widget</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <resources>
   <include location="../../assets/resources.qrc"/>
  </resources>

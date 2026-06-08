@@ -1,0 +1,234 @@
+<svg width="1024" height="600" viewBox="0 0 1024 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Diagram_Main">
+<rect width="1024" height="600" fill="#F0F0F0" fill-opacity="0.941176"/>
+<g id="card_tank1" filter="url(#filter0_d_1632_2503)">
+<rect x="19" y="90" width="180" height="280" rx="15" fill="white"/>
+</g>
+<g id="tank1_pipe_in">
+<line id="tank1_pipe_in_3" x1="40" y1="157" x2="40" y2="128" stroke="#3EC0E7" stroke-width="2"/>
+<line id="tank1_pipe_in_2" x1="39" y1="129" x2="78" y2="129" stroke="#3EC0E7" stroke-width="2"/>
+<line id="tank1_pipe_in_1" x1="77" y1="128" x2="77" y2="139" stroke="#3EC0E7" stroke-width="2"/>
+<path id="tank1_pipe_in_arrow" d="M47.7949 149.5H32.2051L40 135.999L47.7949 149.5Z" fill="#3EC0E7" stroke="#9A9A9A"/>
+</g>
+<g id="card_control" filter="url(#filter1_d_1632_2503)">
+<rect x="19" y="380" width="370" height="140" rx="15" fill="white"/>
+</g>
+<g id="card_main_chamber" filter="url(#filter2_d_1632_2503)">
+<rect x="399" y="90" width="300" height="430" rx="15" fill="white"/>
+</g>
+<g id="card_tank2" filter="url(#filter3_d_1632_2503)">
+<rect x="209" y="90" width="180" height="280" rx="15" fill="white"/>
+</g>
+<g id="tank1_valve_in">
+<path id="tank1_valve_in_2" d="M47.7949 154.5H32.2051L40 168.001L47.7949 154.5Z" fill="#00FF39" stroke="black"/>
+<path id="tank1_valve_in_1" d="M47.7949 182.5H32.2051L40 168.999L47.7949 182.5Z" fill="#00FF39" stroke="black"/>
+</g>
+<g id="card_blower" filter="url(#filter4_d_1632_2503)">
+<rect x="799" y="90" width="200" height="185" rx="15" fill="white"/>
+</g>
+<g id="card_heater" filter="url(#filter5_d_1632_2503)">
+<rect x="709" y="90" width="80" height="430" rx="15" fill="white"/>
+</g>
+<g id="card_chemical" filter="url(#filter6_d_1632_2503)">
+<rect x="799" y="285" width="200" height="235" rx="15" fill="white"/>
+</g>
+<g id="tank1_2_pipe_to_chamber">
+<line id="tank1_2_to_chamber_pipe" x1="277" y1="323" x2="421" y2="323" stroke="#FF0000" stroke-width="2"/>
+<path id="tank1_2_to_chamber_arrow" d="M358.5 330.795V315.205L372.001 323L358.5 330.795Z" fill="#FF0000" stroke="black"/>
+</g>
+<g id="heater1_pipe_out">
+<line id="heater1_pipe_out_1" x1="719" y1="193" x2="654" y2="193" stroke="#FFB200" stroke-width="2"/>
+<path id="heater1_pipe_out_arrow" d="M690.5 186.205V201.795L676.999 194L690.5 186.205Z" fill="#FFB200" stroke="#9A9A9A"/>
+</g>
+<g id="blower_pipe_out">
+<line id="blower_pipe_out_1" x1="901" y1="205" x2="779" y2="205" stroke="#0025A9" stroke-width="2"/>
+<path id="blower_pipe_out_arrow" d="M842.5 197.205V212.795L828.999 205L842.5 197.205Z" fill="#0025A9" stroke="#9A9A9A"/>
+</g>
+<g id="chemical1_pipe_out">
+<line id="chemical1_pipe_out_1" x1="834" y1="367" x2="834" y2="289" stroke="#8B008B" stroke-width="2"/>
+<path id="chemical1_pipe_arrow" d="M841.795 309.5H826.205L834 295.999L841.795 309.5Z" fill="#8B008B" stroke="#9A9A9A"/>
+</g>
+<g id="chemical3_pipe_out">
+<line id="chemical3_pipe_out_1" x1="964" y1="367" x2="964" y2="291" stroke="#8B008B" stroke-width="2"/>
+<path id="chemical3_pipe_arrow" d="M971.795 309.5H956.205L964 295.999L971.795 309.5Z" fill="#8B008B" stroke="#9A9A9A"/>
+<line id="chemical3_pipe_out_3" x1="900" y1="290" x2="965" y2="290" stroke="#7A017A" stroke-width="2"/>
+</g>
+<g id="chemical2_pipe_out">
+<line id="chemical2_pipe_out_1" x1="899" y1="367" x2="899" y2="291" stroke="#8B008B" stroke-width="2"/>
+<path id="chemical2_pipe_arrow" d="M906.795 309.5H891.205L899 295.999L906.795 309.5Z" fill="#8B008B" stroke="#9A9A9A"/>
+</g>
+<g id="water4_valve">
+<path id="water4_valve_2" d="M631.795 145.5H616.205L624 159.001L631.795 145.5Z" fill="#00FF39" stroke="black"/>
+<path id="water4_valve_1" d="M631.795 173.5H616.205L624 159.999L631.795 173.5Z" fill="#00FF39" stroke="black"/>
+</g>
+<g id="tank2_pipe_out">
+<line id="tank2_pipe_out_2" x1="278" y1="322" x2="278" y2="271" stroke="#FF0000" stroke-width="2"/>
+<path id="tank2_arrow_out" d="M270.205 285.5H285.795L278 299.001L270.205 285.5Z" fill="#FF0000" stroke="black"/>
+<line id="tank2_pipe_out_1" x1="278" y1="236" x2="278" y2="246" stroke="#FF0000" stroke-width="2"/>
+</g>
+<g id="airdry_pipe_out">
+<line id="airdry_pipe_out_2" x1="944" y1="187" x2="944" y2="139" stroke="#0025A9" stroke-width="2"/>
+<path id="airdry_pipe_out_arrow" d="M936.205 153.5H951.795L944 167.001L936.205 153.5Z" fill="#0025A9" stroke="#9A9A9A"/>
+<line id="airdry_pipe_out_1" x1="875" y1="139" x2="945" y2="139" stroke="#0025A9" stroke-width="2"/>
+</g>
+<g id="tank1_pipe_out">
+<line id="tank1_pipe_out_3" x1="76" y1="324" x2="76" y2="270" stroke="#FF0000" stroke-width="2"/>
+<line id="tank1_pipe_out_2" x1="76" y1="323" x2="277" y2="323" stroke="#FF0000" stroke-width="2"/>
+<path id="tank1_arrow_out" d="M68.2051 283.5H83.7949L76 297.001L68.2051 283.5Z" fill="#FF0000" stroke="black"/>
+<line id="tank1_pipe_out_1" x1="76" y1="236" x2="76" y2="246" stroke="#FF0000" stroke-width="2"/>
+</g>
+<g id="tank2_pipe_in">
+<line id="tank2_pipe_in_3" x1="242" y1="158" x2="242" y2="129" stroke="#18B3E2" stroke-width="2"/>
+<line id="tank2_pipe_in_2" x1="241" y1="130" x2="268" y2="130" stroke="#18B3E2" stroke-width="2"/>
+<line id="tank2_pipe_in_1" x1="267" y1="129" x2="267" y2="140" stroke="#18B3E2" stroke-width="2"/>
+<path id="tank2_pipe_in_arrow" d="M249.795 152.5H234.205L242 138.999L249.795 152.5Z" fill="#3EC0E7" stroke="#9A9A9A"/>
+</g>
+<g id="heater2_pipe_out">
+<line id="heater2_pipe_out_1" x1="753" y1="334" x2="753" y2="252" stroke="#F47E47" stroke-width="2"/>
+<line id="heater2_pipe_out_2" x1="754" y1="253" x2="651" y2="253" stroke="#F47E47" stroke-width="2"/>
+<path id="heater2_pipe_out_arrow" d="M741.5 245.205V260.795L727.999 253L741.5 245.205Z" fill="#F47E47" stroke="#9A9A9A"/>
+</g>
+<g id="chemical_all_pipe_out">
+<line id="chemical_all_pipe_out_1" x1="835" y1="290" x2="651" y2="290" stroke="#8B008B" stroke-width="2"/>
+<path id="chemical_all_pipe_out_arrow" d="M741.5 282.205V297.795L727.999 290L741.5 282.205Z" fill="#8B008B" stroke="#9A9A9A"/>
+</g>
+<g id="chemical_for_2or3_pipe_out">
+<line id="chemical_for_2or3_pipe_out_1" x1="835" y1="290" x2="900" y2="290" stroke="#7A017A" stroke-width="2"/>
+</g>
+<g id="drain_valve">
+<path id="drain_vale_2" d="M478.795 455.5H463.205L471 469.001L478.795 455.5Z" fill="#00FF39" stroke="black"/>
+<path id="drain_vale_1" d="M478.795 483.5H463.205L471 469.999L478.795 483.5Z" fill="#00FF39" stroke="black"/>
+</g>
+<g id="drain_pipe">
+<line id="drain_pipe_1" x1="471" y1="339" x2="471" y2="455" stroke="#CE925A" stroke-width="2"/>
+<path id="drain_pipe_arrow" d="M463.205 409.5H478.795L471 423.001L463.205 409.5Z" fill="#CE925A" stroke="#9A9A9A"/>
+</g>
+<g id="recovery_pipe_to_tank2">
+<line id="recovery_pipe_to_tank2_4" x1="227" y1="358" x2="227" y2="119" stroke="#18B3E2" stroke-width="2"/>
+<line id="recovery_pipe_to_tank2_3" x1="290" y1="120" x2="227" y2="120" stroke="#18B3E2" stroke-width="2"/>
+<path id="recovery_pipe_to_tank2_arrow_2" d="M269.5 127.795V112.205L283.001 120L269.5 127.795Z" fill="#3EC0E7" stroke="#9A9A9A"/>
+<line id="recovery_pipe_to_tank2_2" x1="290" y1="119" x2="290" y2="140" stroke="#18B3E2" stroke-width="2"/>
+<line id="recovery_pipe_to_tank2_1" x1="286" y1="357" x2="226" y2="357" stroke="#18B3E2" stroke-width="2"/>
+<path id="recovery_pipe_to_tank2_arrow_1" d="M263.5 349.205V364.795L249.999 357L263.5 349.205Z" fill="#3EC0E7" stroke="#9A9A9A"/>
+</g>
+<g id="pupm_pipe_out">
+<line id="pupm_pipe_out_2" x1="724" y1="357" x2="583" y2="357" stroke="#18B3E2" stroke-width="2"/>
+<path id="pump_pipe_out_arrow_2" d="M671.5 364.795V349.205L685.001 357L671.5 364.795Z" fill="#3EC0E7" stroke="#9A9A9A"/>
+<line id="pupm_pipe_out_1" x1="582" y1="439" x2="582" y2="356" stroke="#18B3E2" stroke-width="2"/>
+<path id="pump_pipe_out_arrow_1" d="M589.795 406.5H574.205L582 392.999L589.795 406.5Z" fill="#3EC0E7" stroke="#9A9A9A"/>
+<line id="pupm_pipe_out_3" x1="581" y1="357" x2="313" y2="357" stroke="#18B3E2" stroke-width="2"/>
+<path id="pump_pipe_out_arrow_3" d="M448.5 349.205V364.795L434.999 357L448.5 349.205Z" fill="#3EC0E7" stroke="#9A9A9A"/>
+</g>
+<g id="pump_pipe_in">
+<path id="pump_pipe_in_2" d="M631 475V428" stroke="#003057" stroke-width="2"/>
+<line id="pump_pipe_in_3" x1="632" y1="474" x2="604" y2="474" stroke="#003057" stroke-width="2"/>
+<line id="pump_pipe_in_1" x1="631" y1="401" x2="631" y2="340" stroke="#003057" stroke-width="2"/>
+<path id="pump_pipe_in_arrow_2" d="M623.205 445.5H638.795L631 459.001L623.205 445.5Z" fill="#003057" stroke="black"/>
+<path id="pump_pipe_in_arrow_1" d="M623.205 370.5H638.795L631 384.001L623.205 370.5Z" fill="#003057" stroke="black"/>
+</g>
+<g id="chamber_valve">
+<path id="chamber_valve_2" d="M638.795 400.5H623.205L631 414.001L638.795 400.5Z" fill="#00FF39" stroke="black"/>
+<path id="chamber_valve_1" d="M638.795 428.5H623.205L631 414.999L638.795 428.5Z" fill="#00FF39" stroke="black"/>
+</g>
+<g id="recovery_valve">
+<path id="recovery_valve_2" d="M285.5 349.205V364.795L299.001 357L285.5 349.205Z" fill="#00FF39" stroke="black"/>
+<path id="recovery_valve_1" d="M313.5 349.205V364.795L299.999 357L313.5 349.205Z" fill="#00FF39" stroke="black"/>
+</g>
+<g id="water3_valve">
+<path id="water3_valve_2" d="M484.795 145.5H469.205L477 159.001L484.795 145.5Z" fill="#00FF39" stroke="black"/>
+<path id="water3_valve_1" d="M484.795 173.5H469.205L477 159.999L484.795 173.5Z" fill="#00FF39" stroke="black"/>
+</g>
+<g id="water4_valve_pipe_out">
+<line id="water4_valve_pipe_out_1" x1="624" y1="174" x2="624" y2="194" stroke="#3EC0E7" stroke-width="2"/>
+<path id="water4_valve_pipe_out_arrow" d="M616.205 176.5H631.795L624 190.001L616.205 176.5Z" fill="#3EC0E7" stroke="#9A9A9A"/>
+</g>
+<g id="tank2_valve_out">
+<path id="tank2_valve_out_2" d="M285.795 245.5H270.205L278 259.001L285.795 245.5Z" fill="#00FF39" stroke="black"/>
+<path id="tank2_valve_out_1" d="M285.795 273.5H270.205L278 259.999L285.795 273.5Z" fill="#00FF39" stroke="black"/>
+</g>
+<g id="tank1_vale_out">
+<path id="tank1_vale_out_2" d="M83.7949 245.5H68.2051L76 259.001L83.7949 245.5Z" fill="#00FF39" stroke="black"/>
+<path id="tank1_vale_out_1" d="M83.7949 273.5H68.2051L76 259.999L83.7949 273.5Z" fill="#00FF39" stroke="black"/>
+</g>
+<g id="tank2_valve_in">
+<path id="tank2_valve_in_2" d="M249.795 157.5H234.205L242 171.001L249.795 157.5Z" fill="#00FF39" stroke="black"/>
+<path id="tank2_valve_in_1" d="M249.795 185.5H234.205L242 171.999L249.795 185.5Z" fill="#00FF39" stroke="black"/>
+</g>
+<g id="water3_valve_pipe_out">
+<line id="water3_valve_pipe_out_1" x1="477" y1="174" x2="477" y2="194" stroke="#3EC0E7" stroke-width="2"/>
+<path id="water3_valve_pipe_out_arrow" d="M469.205 176.5H484.795L477 190.001L469.205 176.5Z" fill="#3EC0E7" stroke="#9A9A9A"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_1632_2503" x="15" y="90" width="188" height="288" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1632_2503"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1632_2503" result="shape"/>
+</filter>
+<filter id="filter1_d_1632_2503" x="15" y="380" width="378" height="148" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1632_2503"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1632_2503" result="shape"/>
+</filter>
+<filter id="filter2_d_1632_2503" x="395" y="90" width="308" height="438" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1632_2503"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1632_2503" result="shape"/>
+</filter>
+<filter id="filter3_d_1632_2503" x="205" y="90" width="188" height="288" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1632_2503"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1632_2503" result="shape"/>
+</filter>
+<filter id="filter4_d_1632_2503" x="795" y="90" width="208" height="193" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1632_2503"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1632_2503" result="shape"/>
+</filter>
+<filter id="filter5_d_1632_2503" x="705" y="90" width="88" height="438" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1632_2503"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1632_2503" result="shape"/>
+</filter>
+<filter id="filter6_d_1632_2503" x="795" y="285" width="208" height="243" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1632_2503"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1632_2503" result="shape"/>
+</filter>
+</defs>
+</svg>
